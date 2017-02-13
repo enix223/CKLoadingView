@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jE0-zK-NnZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Programmatically-->
+        <scene sceneID="PKu-c9-SFO">
+            <objects>
+                <viewController id="GpI-15-LCl" customClass="ExampleProgrammatic" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5AD-n4-4be"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mhy-oa-PI7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b68-bc-krM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Programmatically" id="I5d-DE-2Jb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bd7-vO-f6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="452"/>
+        </scene>
+        <!--Storyboard-->
+        <scene sceneID="8jN-6k-LEW">
+            <objects>
+                <viewController id="f2T-BK-9Ks" customClass="ExampleStoryboard" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3tU-zn-Um1"/>
+                        <viewControllerLayoutGuide type="bottom" id="VQj-b4-fuO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kxX-fW-Hat">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSX-Hg-Y81" customClass="CKLoadingView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="177"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mv-58-fL7" customClass="CKLoadingView">
+                                <rect key="frame" x="0.0" y="197" width="600" height="177"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0N-s3-Uvy" customClass="CKLoadingView">
+                                <rect key="frame" x="0.0" y="374" width="600" height="177"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9mv-58-fL7" firstAttribute="height" secondItem="GSX-Hg-Y81" secondAttribute="height" id="8hN-ng-zCP"/>
+                            <constraint firstItem="v0N-s3-Uvy" firstAttribute="leading" secondItem="kxX-fW-Hat" secondAttribute="leading" id="CP1-ic-d1D"/>
+                            <constraint firstAttribute="trailing" secondItem="v0N-s3-Uvy" secondAttribute="trailing" id="DhN-b2-r3I"/>
+                            <constraint firstItem="GSX-Hg-Y81" firstAttribute="centerX" secondItem="kxX-fW-Hat" secondAttribute="centerX" id="FnQ-PD-ciP"/>
+                            <constraint firstItem="v0N-s3-Uvy" firstAttribute="height" secondItem="GSX-Hg-Y81" secondAttribute="height" id="LVA-0a-5tD"/>
+                            <constraint firstItem="GSX-Hg-Y81" firstAttribute="leading" secondItem="kxX-fW-Hat" secondAttribute="leading" id="QTC-xM-mxE"/>
+                            <constraint firstAttribute="trailing" secondItem="GSX-Hg-Y81" secondAttribute="trailing" id="VJU-lj-ZY5"/>
+                            <constraint firstItem="v0N-s3-Uvy" firstAttribute="top" secondItem="9mv-58-fL7" secondAttribute="bottom" id="aoz-Ib-H2q"/>
+                            <constraint firstItem="9mv-58-fL7" firstAttribute="leading" secondItem="kxX-fW-Hat" secondAttribute="leading" id="fIz-Xf-wH0"/>
+                            <constraint firstAttribute="trailing" secondItem="9mv-58-fL7" secondAttribute="trailing" id="jwe-Eu-qrq"/>
+                            <constraint firstItem="v0N-s3-Uvy" firstAttribute="top" secondItem="9mv-58-fL7" secondAttribute="bottom" id="kPg-4O-oEf"/>
+                            <constraint firstItem="VQj-b4-fuO" firstAttribute="top" secondItem="v0N-s3-Uvy" secondAttribute="bottom" id="qkU-BV-rYY"/>
+                            <constraint firstItem="GSX-Hg-Y81" firstAttribute="top" secondItem="3tU-zn-Um1" secondAttribute="bottom" id="s8k-Ae-zjT"/>
+                            <constraint firstItem="9mv-58-fL7" firstAttribute="top" secondItem="GSX-Hg-Y81" secondAttribute="bottom" id="xXi-vS-riG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Storyboard" id="WnR-GX-HOp"/>
+                    <connections>
+                        <outlet property="circleLoadingView" destination="GSX-Hg-Y81" id="Lah-Cq-I6u"/>
+                        <outlet property="rectLoadingView" destination="9mv-58-fL7" id="m4F-jL-fSd"/>
+                        <outlet property="squareLoadingView" destination="v0N-s3-Uvy" id="B0L-nR-HMk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8bM-6g-pc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="-209"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="h2K-NB-Ki2">
+            <objects>
+                <tabBarController id="jE0-zK-NnZ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KCW-hI-mAm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="f2T-BK-9Ks" kind="relationship" relationship="viewControllers" id="UuK-fw-z7J"/>
+                        <segue destination="GpI-15-LCl" kind="relationship" relationship="viewControllers" id="ewQ-YT-eyb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PC3-ql-fUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="121"/>
+        </scene>
+    </scenes>
+</document>

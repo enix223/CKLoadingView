@@ -1,0 +1,16 @@
+PODS:
+  - CKLoadingView (0.0.1)
+
+DEPENDENCIES:
+  - CKLoadingView (from `../CKLoadingView.podspec`)
+
+EXTERNAL SOURCES:
+  CKLoadingView:
+    :path: ../CKLoadingView.podspec
+
+SPEC CHECKSUMS:
+  CKLoadingView: 1a5f26f1baf8f8ab87df5116e3ac76cbb896f107
+
+PODFILE CHECKSUM: 94dbc712bff3b7bcffb791bd77b62a3c2e9e0d4e
+
+COCOAPODS: 1.1.1
