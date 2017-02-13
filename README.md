@@ -8,7 +8,7 @@
 ![rectangle](Screenshoots/ckloading-rect.gif)  
 ![square](Screenshoots/ckloading-square.gif) 
 
-CKLoadingView is a component of [ConventKit](https://github.com/enix223/ConventKit.git)
+CKLoadingView is a component of [ConventKit](https://github.com/enix223/ConvenKit)
 
 -----
 
