@@ -1,6 +1,9 @@
 # CKLoadingView
 🎤 Fully customized animatable iOS Loading view.
 
+[![Pod Version](http://img.shields.io/cocoapods/v/CKLoadingView.svg)](http://cocoadocs.org/docsets/CKLoadingView/)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
+
 ![circle](Screenshoots/ckloading-circle.gif)  
 ![rectangle](Screenshoots/ckloading-rect.gif)  
 ![square](Screenshoots/ckloading-square.gif)  
