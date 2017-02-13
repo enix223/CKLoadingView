@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.requires_arc = true
 
-  s.source       = { :git => "https://github.com/enix223/CKLoadingView.git", :commit => "a1c18bbf72809023d6a229d4d59326a6617c636e" }
+  s.source       = { :git => "https://github.com/enix223/CKLoadingView.git", :tag => s.version.to_s }
 
   s.source_files  = "Source", "Source/**/*.{h,m}"
   s.exclude_files = "Source/Exclude"
