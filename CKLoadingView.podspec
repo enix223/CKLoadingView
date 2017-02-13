@@ -9,13 +9,13 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/enix223/CKLoadingView"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
   s.license      = "MIT"
 
   s.author       = { "Enix Yu" => "enix223@163.com" }
   s.platform     = :ios
-  s.platform     = :ios, "5.0"
+  s.platform     = :ios, "7.0"
+  s.requires_arc = true
 
   s.source       = { :git => "https://github.com/enix223/CKLoadingView.git", :commit => "a1c18bbf72809023d6a229d4d59326a6617c636e" }
 

@@ -48,7 +48,7 @@
     
     // The loading item's target alpha value when animation end. Please note the animation will be reverse back,
     // so the alpha animation will be:  1.0 ----> 0.3 ---> 1.0
-    _circleLoadingView.animateToAlpha = 1.0;
+    _circleLoadingView.animateToAlpha = 0.3;
     
     /////////// Rectangle loading view ///////////////////////
     _rectLoadingView.itemWidth = 20;
