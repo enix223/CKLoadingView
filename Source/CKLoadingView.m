@@ -6,6 +6,7 @@
 //  Copyright © 2017 RobotBros. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "CKLoadingView.h"
 
 #define CKLoadingDefaultItemCount               3
@@ -18,7 +19,12 @@
 #define CKLoadingItemRectangleWidthFactor       0.3
 #define CKLoadingViewAnimationIdentityKey       @"animationIndex"
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 100000
+// CAAnimationDelegate is not available before iOS 10 SDK
 @interface CKLoadingView ()
+#else
+@interface CKLoadingView () <CAAnimationDelegate>
+#endif
 
 //
 //  +---------+
